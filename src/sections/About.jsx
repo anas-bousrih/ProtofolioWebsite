@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import codingPov from "../assets/coding-pov.png";
 import Spotlight from "../components/Spotlight";
 import { PiReadCvLogoFill } from "react-icons/pi";
-import { Frameworks } from "../components/frameworks";
+import { Frameworks } from "../components/FrameWorks";
 import MinimalChat from "../components/MinimalChat";
 
 
