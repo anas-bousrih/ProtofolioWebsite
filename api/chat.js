@@ -61,18 +61,17 @@ ${question}
 
   try {
     const client = new OpenAI({ apiKey });
-    const completion = await client.responses.create({
+    const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
-      input: [
+      messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userContent },
       ],
-      max_output_tokens: 400,
+      max_tokens: 400,
     });
 
     const reply =
-      completion.output_text ||
-      completion.output?.[0]?.content?.[0]?.text ||
+      completion.choices?.[0]?.message?.content?.trim() ||
       "Sorry, I couldn't generate a response.";
 
     return res.status(200).json({ answer: reply });
