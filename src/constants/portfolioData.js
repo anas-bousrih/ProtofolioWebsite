@@ -60,8 +60,8 @@ export const portfolioData = {
       nextTasks: ["Performance pass", "More classroom feedback"],
     },
     {
-      slug: "portfolio-refresh",
-      title: "Portfolio Refresh",
+      slug: "portfolio-website",
+      title: "Portfolio website",
       shortDescription: "Intentional, minimal portfolio with AI-aided storytelling.",
       year: "2025",
       stack: ["React", "Vite", "Tailwind"],
