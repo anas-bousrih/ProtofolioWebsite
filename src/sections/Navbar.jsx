@@ -14,13 +14,13 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#work">
-          Work
+        <a className="nav-link" href="#projects">
+          Projects
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
-          Contact
+        <a className="nav-link" href="#footer">
+          Contact / Resume
         </a>
       </li>
     </ul>
