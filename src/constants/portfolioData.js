@@ -104,13 +104,13 @@ and connecting with attendees from diverse backgrounds.
     },
     {
       name: "Regional TSA Winner — Webmaster Competition",
-      year: 2024,
+      year: 2025,
       description:
         "Led a team to build a fully responsive vegan restaurant website. Recognized for concept, UI, and structure."
     },
     {
       name: "GMetrix HTML & CSS Certification",
-      year: 2024
+      year: 2025
     }
   ],
 
@@ -143,7 +143,7 @@ and connecting with attendees from diverse backgrounds.
       id: "fbla-merch-site",
       name: "FBLA Merch Website",
       year: 2025,
-      status: "In Development",
+      status: "In-Development",
       category: "FBLA Student Initiative",
       stack: ["Next.js", "TypeScript", "Tailwind", "Django", "PostgreSQL", "Supabase"],
       overview: `
@@ -177,7 +177,7 @@ systems that must be reliable, secure, and easy for others to use.
     {
       id: "blindbids",
       name: "BlindBids — Multiplayer Auction Game",
-      year: 2024,
+      year: 2025,
       status: "Live",
       category: "Independent",
       stack: ["React", "Flask", "Vite"],
@@ -241,7 +241,6 @@ it marks the start of the journey and reminds me how far I've come.
     prompt_summary:
       "Reflection on service, diversity, community-building, and personal growth through outreach and volunteering.",
     full_text: `
-${/* full essay text here—but shortened for token efficiency */ ""}
 For OpenAI: use summarized references instead of quoting full paragraphs.
 Key Ideas:
 - Moving to the U.S. and learning English shaped confidence.
