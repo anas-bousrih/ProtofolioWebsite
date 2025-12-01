@@ -12,7 +12,21 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
   }
 
-  const { question, audience = "general viewer" } = req.body || {};
+  let body = {};
+  try {
+    if (typeof req.body === "string") {
+      body = JSON.parse(req.body || "{}");
+    } else if (req.body) {
+      body = req.body;
+    } else {
+      const raw = await readReqBody(req);
+      body = raw ? JSON.parse(raw) : {};
+    }
+  } catch (e) {
+    return res.status(400).json({ error: "Invalid JSON body" });
+  }
+
+  const { question, audience = "general viewer" } = body;
   if (!question || typeof question !== "string") {
     return res.status(400).json({ error: "Missing question" });
   }
@@ -64,6 +78,17 @@ ${question}
     return res.status(200).json({ answer: reply });
   } catch (err) {
     console.error("OpenAI error:", err);
-    return res.status(500).json({ error: "AI request failed" });
+    return res.status(500).json({ error: "AI request failed", detail: err?.message || String(err) });
   }
+}
+
+function readReqBody(req) {
+  return new Promise((resolve, reject) => {
+    let data = "";
+    req.on("data", (chunk) => {
+      data += chunk;
+    });
+    req.on("end", () => resolve(data));
+    req.on("error", reject);
+  });
 }
