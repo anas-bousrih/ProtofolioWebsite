@@ -6,8 +6,7 @@ export const portfolioData = {
     location: "Louisville, KY",
     identity: "Student developer focused on building useful tools for schools and communities.",
     summary: `
-I am a student developer who learned English while adapting to a new country,
-and I discovered my confidence through service, outreach, and technology.
+I am a student developer who found confidence through service, outreach, and technology.
 I build practical software—from full-stack merch systems to real-time games—
 and I care deeply about clarity, empathy, and tools that help people.
     `,
