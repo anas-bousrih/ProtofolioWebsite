@@ -63,7 +63,7 @@ ${question}
     const client = new OpenAI({ apiKey });
     const completion = await client.responses.create({
       model: "gpt-4o-mini",
-      messages: [
+      input: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userContent },
       ],
