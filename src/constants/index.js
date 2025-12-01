@@ -42,26 +42,26 @@ export const myProjects = [
     images: [
         // Store view , Order Flow & Pickup, Security & Access, Admin Panel 
       {
-        src: "public/FBLAMerchScreenshots/HomePageView.png",
+        src: "/FBLAMerchScreenshots/HomePageView.png",
         title: "Home Page",
         description: "A responsive landing page showcasing featured products and categories.",
         category: "Store view",
       },
       {
-        src: "public/FBLAMerchScreenshots/ProductsPageView.png",
+        src: "/FBLAMerchScreenshots/ProductsPageView.png",
         title: "Products Page",
         description: "A grid layout showcasing all available products with filtering and sorting options.",
         category: "Store view",
         },
       {
-      src: "public/FBLAMerchScreenshots/ProductView.png",
+      src: "/FBLAMerchScreenshots/ProductView.png",
       title: "Product View",
       description: "Variants for size/color with live inventory displayed for the user to ensure a smooth shopping experience.",
       category: "Store view",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/HomePageMobileView.png",
+      src: "/FBLAMerchScreenshots/HomePageMobileView.png",
       title: "Mobile Home Page",
       description: "Showcasing the responsive design of the home page on mobile devices. Hint: If you have this open on a computer it may look squished :) Try Inscpecting the page to see it on a mobile view!",
       category: "Store view",
@@ -69,21 +69,21 @@ export const myProjects = [
 
       // admin Panel 
       {
-      src: "public/FBLAMerchScreenshots/AdminPageView.png",
+      src: "/FBLAMerchScreenshots/AdminPageView.png",
       title: "Admin Panel",
       description: "Made a dedicated interface for admins to manage products & inventory, orders, users, and other store configurations.",
       category: "Admin Panel",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/ProductManagementView.png",
+      src: "/FBLAMerchScreenshots/ProductManagementView.png",
       title: "Product Management",
       description: "Made a working product management page where admins can view and manage product listings or add new ones along with integrating product images uploades to a supabase storage CDN for fast delivery and scalability.",
       category: "Admin Panel",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/ProductEditView.png",
+      src: "/FBLAMerchScreenshots/ProductEditView.png",
       title: "Product Editing",
       description: "Added a product editing interface to manage a product's variants such as sizes, colors etc. by adding new options or modifying existing ones or editing product details like descriptions and pricing.",
       category: "Admin Panel",
@@ -92,28 +92,28 @@ export const myProjects = [
       // Security & Access
 
       {
-      src: "public/FBLAMerchScreenshots/AdminRolesPageView.png",
+      src: "/FBLAMerchScreenshots/AdminRolesPageView.png",
       title: "Admin Roles Page",
       description: "Implemented role-based access control for admin users, allowing for different permission levels and a more secure management interface.",
       category: "Security & Access",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/SecurityAuditPageSummury.png",
+      src: "/FBLAMerchScreenshots/SecurityAuditPageSummury.png",
       title: "Security Audit Page",
       description: "Developed a backend security audit system and a frontend dashboard to monitor and review potential security issues and vulnerabilities within the web application to every change is recorded and website data protected.",
       category: "Security & Access",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/LoginPageView.png",
+      src: "/FBLAMerchScreenshots/LoginPageView.png",
       title: "Login Page",
       description: "Implemented secure authentication flows using Django Authentication System to ensure only authorized users can access their accounts and make purchases. addition: Authentication flows may be switched to Supabase Auth in the future for better scalability and ease of use.",
       category: "Security & Access",
       },
 
       {
-      src: "public/FBLAMerchScreenshots/SignupPageView.png",
+      src: "/FBLAMerchScreenshots/SignupPageView.png",
       title: "Signup Page",
       description: "Designed a user friendly signup page to welcome new users quickly while ensuring data validation and security best practices are followed.",
       category: "Security & Access",

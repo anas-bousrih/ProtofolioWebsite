@@ -1,4 +1,18 @@
 import OrbitingCircles from "./OrbitingCircles"
+import reactLogo from "../assets/tech/reactjs.png";
+import tailwindLogo from "../assets/tech/tailwind.png";
+import nextLogo from "../assets/tech/nextjs2.png";
+import djangoLogo from "../assets/tech/django.png";
+import postgresLogo from "../assets/tech/postgresql.svg";
+import flaskLogo from "../assets/tech/flask.png";
+import htmlLogo from "../assets/tech/html5.png";
+import cssLogo from "../assets/tech/css.png";
+import jsLogo from "../assets/tech/javascript.png";
+import gitLogo from "../assets/tech/git.png";
+import githubLogo from "../assets/tech/github.png";
+import pythonLogo from "../assets/tech/python.png";
+import viteLogo from "../assets/tech/vitejs.png";
+import supabaseLogo from "../assets/tech/supabase.png";
 
 export function Frameworks() {
     const skills = [
@@ -14,7 +28,8 @@ export function Frameworks() {
         "Git",
         "GitHub", 
         "Python",
-        "Vitejs"
+        "Vitejs",
+        "Supabase"
     ]
 
 
@@ -40,28 +55,31 @@ export function Frameworks() {
 import { useState } from "react";
 
 const Icons = ({ name, alt }) => {
-  const formats = ["svg", "png", "jpg", "webp"];
-  const [idx, setIdx] = useState(0);
-  const [failedAll, setFailedAll] = useState(false);
-
-  if (failedAll) return null;
-
-  const src = `/src/assets/tech/${name}.${formats[idx]}`;
-
-  const handleError = () => {
-    if (idx + 1 < formats.length) {
-      setIdx(idx + 1);
-    } else {
-      setFailedAll(true);
-    }
+  const iconMap = {
+    Reactjs: reactLogo,
+    Tailwind: tailwindLogo,
+    Nextjs2: nextLogo,
+    Django: djangoLogo,
+    Postgresql: postgresLogo,
+    Flask: flaskLogo,
+    Html5: htmlLogo,
+    CSS: cssLogo,
+    JavaScript: jsLogo,
+    Git: gitLogo,
+    GitHub: githubLogo,
+    Python: pythonLogo,
+    Vitejs: viteLogo,
+    Supabase: supabaseLogo,
   };
+
+  const src = iconMap[name];
+  if (!src) return null;
 
   return (
     <img
       src={src}
       alt={alt}
       className="h-10 w-10 object-contain drop-shadow-[0_0_10px_rgba(16,185,129,0.25)]"
-      onError={handleError}
     />
   );
 }
