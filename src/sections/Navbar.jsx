@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import menuIcon from "../assets/menu.svg";
+import closeIcon from "../assets/close.svg";
 function Navigation() {
   return (
     <ul className="nav-ul">
@@ -43,7 +45,7 @@ const Navbar = () => {
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <img
-              src={isOpen ? 'src/assets/close.svg' : 'src/assets/menu.svg'}
+              src={isOpen ? closeIcon : menuIcon}
               className="w-5 h-5"
               alt='toggle'
             />
