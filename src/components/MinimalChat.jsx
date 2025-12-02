@@ -90,7 +90,7 @@ const MinimalChat = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/5 backdrop-blur-sm h-[clamp(320px,55vh,480px)]">
+      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/5 backdrop-blur-sm h-[clamp(300px,60vh,460px)]">
         {idle && (
           <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 text-center text-neutral-300 px-4">
             <div className="relative h-20 sm:h-20 w-16 sm:w-20 rounded-full bg-gradient-to-br from-emerald-400/20 via-white/10 to-[#33c2cc]/15 shadow-lg shadow-black/30">

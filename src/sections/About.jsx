@@ -33,8 +33,7 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-white">Hi, I&apos;m Anas Bousrih</h2>
           <p className="text-neutral-300 text-base md:text-lg leading-relaxed max-w-3xl">
-            I build calm, purposeful web products—mixing React, Next.js, and Django with thoughtful UX.
-            I like shipping things that are easy to use, fast, and visually clear.
+            I build web products with React, Next.js, and Django, focusing on solid architecture, best practices, and clean user interface.
           </p>
         </div>
 
@@ -72,7 +71,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative overflow-hidden lg:row-span-2 min-h-[380px]">
+          <div className="relative overflow-hidden lg:row-span-2 min-h-[320px] md:min-h-[360px] lg:min-h-[400px]">
             <MinimalChat />
           </div>
 
