@@ -3,10 +3,10 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "ALLOWALL" },
+        { "key": "X-Frame-Options", "value": "" },
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors *"
+          "value": "frame-ancestors https://*.canva.com https://canva.com *"
         }
       ]
     }
